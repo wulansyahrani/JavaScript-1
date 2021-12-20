@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor</title>
+  <style>
+    #tempataGambarMotor {
+    }
+  </style>
+</head>
+<body>
+  
+    <h1 id="namaMotor"></h1>
+    <button id="printGambarMotor" onclick="tampilkanGambar()"></button>
+    <div id="tempatGambarMotor"></div>
+
+    <button id="klaksonMotor" onclick="klakson()"></button>
+    <p id="suaraKlaksonMotor">..........</p>
+
+    <script>
+     document.getElementById('namaMotor').innerText = 'Beat';
+     document.getElementById('printGambarMotor').innerText = 'Print Gambar Motor';
+
+     document.getElementById('klaksonMotor').innerText = 'klaksonMotor'
+
+     function tampilkanGambar() {
+      document.getElementById('tempatGambarMotor').innerHTML = '<img src="https://assetcdnendpoint.azureedge.net/uploads/product/feature/thmnail-fiture-beat-upload-1-14072021-053528.png">';
+     }
+
+    function klakson() {
+        document.getElementById('suaraKlaksonMotor').innerText = 'tin tin tin'
+    }
+
+  </script>
+</body>
+</html>
